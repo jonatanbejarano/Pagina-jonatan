@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+         <button class="menu-toggle">☰</button>
+        <nav class="header_menu">
+            <a id="nav-inicio" class="header_menu__link" href="./index.html">Inicio</a>
+            <a id="nav-about" class="header_menu__link" href="./about.html">Sobre mí</a>
+            <a id="nav-habilidades" class="header_menu__link" href="./habilidades.html">Habilidades</a>
+            <div id="language-dropdown-container" class="language-dropdown-container">
+                <button id="language-selector-button" class="language-selector-button">
+                    <span id="current-lang-flag">🇨🇴</span>
+                    <span id="current-lang-text">Español</span>
+                </button>
+                <div id="language-options" class="language-options hidden">
+                    <div data-lang="es">
+                        <span>🇨🇴</span>
+                        <span>Español</span>
+                    </div>
+                    <div data-lang="en">
+                        <span>🇺🇸</span>
+                        <span>English</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+          <h1 class="presentacion__contenido__titulo">
+                <span id="greeting">¡Hola! soy Jonatan Alexander Bejarano Avila estudiante de</span>
+                <strong class="titulo-destaque" id="degree">Ingeniería biomédica</strong>
+            </h1>
+                <div class="presentacion__enlaces">
+                    <h2 class="presentacion__enlaces__titulo" id="socialsTitle">Accede a mis redes:</h2>
+                    <a href="https://github.com/jonatanbejarano?tab=repositories" class="presentacion__enlaces__link"><i class="fab fa-github fa-2x"></i>GitHub</a>
+                    <a href="https://www.linkedin.com/in/jonatan-bejarano-%C3%A1vila-709295256/" class="presentacion__enlaces__link"><i class="fab fa-linkedin fa-2x"></i>LinkedIn</a>
+                </div>
+               
+        </section>
+            <img class="presentacion__imagen" src="./assets/fototo.jpg" alt="Foto de Jonatan Bejarano">
+    </main>
+    <footer class="footer" id="footer-text">
+        <p>Desarrollado por Jonatan</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
